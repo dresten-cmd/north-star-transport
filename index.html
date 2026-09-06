@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Standard Logistics | VTC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="flex items-center justify-between p-6">
+        <div class="text-2xl font-bold gold-text tracking-wider">VTC_ELITE</div>
+        <div class="hidden md:flex space-x-8 uppercase text-sm tracking-widest">
+            <a href="index.html" class="text-yellow-500">Home</a>
+            <a href="news.html" class="hover:text-yellow-500 transition">News</a>
+            <a href="staff.html" class="hover:text-yellow-500 transition">Staff</a>
+            <a href="partners.html" class="hover:text-yellow-500 transition">Partners</a>
+        </div>
+        <button class="gold-bg text-black px-6 py-2 rounded-sm font-bold hover:bg-yellow-600 transition">JOIN US</button>
+    </nav>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-4">
+                    <h1 class="text-5xl md:text-7xl gold-text mb-4">KING OF THE ROAD</h1>
+                    <p class="text-xl tracking-widest uppercase">Premium Long-Haul Logistics</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=1600" alt="Truck 1">
+            </div>
+            <div class="swiper-slide">
+                <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center p-4">
+                    <h1 class="text-5xl md:text-7xl gold-text mb-4">DOMINATE THE HIGHWAY</h1>
+                    <p class="text-xl tracking-widest uppercase">Elite Virtual Fleet Operations</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1600" alt="Truck 2">
+            </div>
+        </div>
+        <div class="swiper-button-next" style="color: #D4AF37;"></div>
+        <div class="swiper-button-prev" style="color: #D4AF37;"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="stat-card p-8 border border-yellow-900/30 bg-zinc-900/50">
+                <h3 class="text-4xl gold-text mb-2">500+</h3>
+                <p class="uppercase tracking-tighter text-zinc-400">Active Drivers</p>
+            </div>
+            <div class="stat-card p-8 border border-yellow-900/30 bg-zinc-900/50">
+                <h3 class="text-4xl gold-text mb-2">1.2M</h3>
+                <p class="uppercase tracking-tighter text-zinc-400">Miles Driven</p>
+            </div>
+            <div class="stat-card p-8 border border-yellow-900/30 bg-zinc-900/50">
+                <h3 class="text-4xl gold-text mb-2">24/7</h3>
+                <p class="uppercase tracking-tighter text-zinc-400">Dispatch Support</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-yellow-900/30 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div class="space-y-4">
+                    <div class="text-2xl font-bold gold-text tracking-wider">VTC_ELITE</div>
+                    <p class="text-zinc-500 text-sm leading-relaxed">
+                        Premium virtual logistics since 2021. Delivering excellence across every virtual mile.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-white uppercase tracking-widest text-sm font-bold">Navigation</h4>
+                    <ul class="text-zinc-500 text-sm space-y-2">
+                        <li><a href="index.html" class="hover:text-yellow-500 transition">Home</a></li>
+                        <li><a href="news.html" class="hover:text-yellow-500 transition">News</a></li>
+                        <li><a href="staff.html" class="hover:text-yellow-500 transition">Staff</a></li>
+                        <li><a href="partners.html" class="hover:text-yellow-500 transition">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-white uppercase tracking-widest text-sm font-bold">Community</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-zinc-500 hover:text-yellow-500 text-sm">Discord</a>
+                        <a href="#" class="text-zinc-500 hover:text-yellow-500 text-sm">TruckersMP</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center text-zinc-600 text-[10px] uppercase tracking-[0.2em]">
+                <div class="flex flex-col md:flex-row md:space-x-4 items-center">
+                    <p>&copy; 2026 VTC Elite Logistics. All Rights Reserved.</p>
+                    <span class="hidden md:inline text-zinc-800">|</span>
+                    <p class="gold-text font-bold opacity-80">Version 0.0.1</p>
+                </div>
+                <p class="mt-2 md:mt-0">Designed for the Virtual Trucking Community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
+    </script>
+</body>
+</html>

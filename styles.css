@@ -18,17 +18,17 @@ body {
     overflow-x: hidden;
 }
 
-/* Utilities */
+/* Reusable Classes */
 .gold-text { color: var(--gold); }
 .gold-bg { background-color: var(--gold); }
 
-/* Navigation */
+/* Navigation Styling */
 nav {
     background-color: var(--pure-black);
     border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-/* Carousel */
+/* Swiper Hero Carousel */
 .swiper {
     width: 100%;
     height: 550px;
@@ -45,7 +45,6 @@ nav {
     object-fit: cover;
 }
 
-/* Swiper Controls Customization */
 .swiper-pagination-bullet {
     background: #ffffff !important;
 }
@@ -54,7 +53,7 @@ nav {
     background: var(--gold) !important;
 }
 
-/* Cards & Interactions */
+/* Card Interactivity */
 .stat-card, .staff-card, .partner-card {
     transition: all 0.3s ease-in-out;
 }
@@ -65,11 +64,6 @@ nav {
     box-shadow: 0 10px 30px -15px rgba(212, 175, 55, 0.3);
 }
 
-.staff-card:hover .relative div {
-    transform: rotate(180deg);
-}
-
-/* Partner Logo Grayscale */
 .partner-logo {
     filter: grayscale(100%) brightness(0.8);
     transition: all 0.4s ease;
@@ -80,9 +74,14 @@ nav {
     transform: scale(1.05);
 }
 
-/* Footer Styling */
+/* Footer Utility */
 footer {
     letter-spacing: 0.05em;
+}
+
+footer p {
+    transition: color 0.3s ease;
+}
 }
 
 footer p {

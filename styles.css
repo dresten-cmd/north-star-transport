@@ -25,7 +25,6 @@ body {
 /* Navigation Styling */
 nav {
     background-color: var(--pure-black);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 /* Swiper Hero Carousel */
@@ -77,11 +76,6 @@ nav {
 /* Footer Utility */
 footer {
     letter-spacing: 0.05em;
-}
-
-footer p {
-    transition: color 0.3s ease;
-}
 }
 
 footer p {

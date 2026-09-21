@@ -11,21 +11,46 @@
 </head>
 <body>
 
-    <nav class="flex items-center justify-between px-6 py-4">
-        <a href="index.html" class="flex items-center">
-            <img src="NST Logo New 2026.png" alt="North Star Transport Logo" class="h-10 md:h-12 w-auto object-contain">
-        </a>
-        <div class="hidden md:flex space-x-8 uppercase text-sm tracking-widest">
-            <a href="index.html" class="text-yellow-500">Home</a>
-            <a href="news.html" class="hover:text-yellow-500 transition">News</a>
-            <a href="staff.html" class="hover:text-yellow-500 transition">Staff</a>
-            <a href="partners.html" class="hover:text-yellow-500 transition">Partners</a>
+    <!-- Navigation -->
+    <nav class="bg-black border-b border-yellow-900/50 relative z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center">
+                <img src="NST Logo New 2026.png" alt="North Star Transport Logo" class="h-10 md:h-12 w-auto object-contain">
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex space-x-8 uppercase text-sm tracking-widest">
+                <a href="index.html" class="text-yellow-500">Home</a>
+                <a href="news.html" class="hover:text-yellow-500 transition">News</a>
+                <a href="staff.html" class="hover:text-yellow-500 transition">Staff</a>
+                <a href="partners.html" class="hover:text-yellow-500 transition">Partners</a>
+            </div>
+
+            <!-- Desktop Join Button -->
+            <div class="hidden md:block">
+                <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank" rel="noopener noreferrer" class="gold-bg text-black px-6 py-2 rounded-sm font-bold hover:bg-yellow-600 transition inline-block">
+                    JOIN US
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden text-yellow-500 focus:outline-none p-2">
+                <svg id="hamburger-icon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg id="close-icon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
         </div>
-        <a href="https://discord.gg/HPCcExygDS" target="_blank" rel="noopener noreferrer" class="gold-bg text-black px-6 py-2 rounded-sm font-bold hover:bg-yellow-600 transition inline-block">
-            JOIN US
-        </a>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-950 border-b border-yellow-900/40 px-6 py-6 space-y-4 text-center">
+            <a href="index.html" class="block text-lg text-yellow-500 uppercase tracking-wider py-1">Home</a>
+            <a href="news.html" class="block text-lg uppercase tracking-wider hover:text-yellow-500 transition py-1">News</a>
+            <a href="staff.html" class="block text-lg uppercase tracking-wider hover:text-yellow-500 transition py-1">Staff</a>
+            <a href="partners.html" class="block text-lg uppercase tracking-wider hover:text-yellow-500 transition py-1">Partners</a>
+            <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank" rel="noopener noreferrer" class="gold-bg text-black px-6 py-3 rounded-sm font-bold hover:bg-yellow-600 transition inline-block w-full mt-4">JOIN US</a>
+        </div>
     </nav>
 
+    <!-- Carousel Section -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -48,6 +73,7 @@
         <div class="swiper-pagination"></div>
     </div>
 
+    <!-- Stats Section -->
     <section class="py-20 px-6 max-w-6xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div class="stat-card p-8 border border-yellow-900/30 bg-zinc-900/50">
@@ -65,13 +91,14 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-black border-t border-yellow-900/30 pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
                 <div class="space-y-4">
                     <img src="NST Logo New 2026.png" alt="North Star Transport Logo" class="h-10 w-auto object-contain">
                     <p class="text-zinc-500 text-sm leading-relaxed">
-                        Going The Extra Mile, So You Don't Have To!
+                        Delivering excellence across every virtual mile.
                     </p>
                 </div>
                 <div class="space-y-4">
@@ -86,8 +113,8 @@
                 <div class="space-y-4">
                     <h4 class="text-white uppercase tracking-widest text-sm font-bold">Community</h4>
                     <div class="flex flex-col space-y-2">
-                        <a href="https://discord.gg/HPCcExygDS" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-yellow-500 text-sm transition">Discord Server</a>
-                        <a href="https://truckersmp.com/vtc/91498" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-yellow-500 text-sm transition">TruckersMP Profile</a>
+                        <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-yellow-500 text-sm transition">Discord Server</a>
+                        <a href="https://truckersmp.com/vtc/YOUR_VTC_ID" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-yellow-500 text-sm transition">TruckersMP Profile</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +125,7 @@
                     <span class="hidden md:inline text-zinc-800">|</span>
                     <p class="gold-text font-bold opacity-80">Version 0.0.1</p>
                 </div>
-                <p class="mt-2 md:mt-0">Designed & Created for North Star Transport by Dresten</p>
+                <p class="mt-2 md:mt-0">Designed for the Virtual Trucking Community</p>
             </div>
         </div>
     </footer>
@@ -110,6 +137,18 @@
             autoplay: { delay: 4000, disableOnInteraction: false },
             pagination: { el: ".swiper-pagination", clickable: true },
             navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
         });
     </script>
 </body>
